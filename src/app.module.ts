@@ -12,6 +12,7 @@ import { SupabaseAuthGuard } from './auth/guards/supabase-auth.guard';
 import { PaymentRequestsModule } from './modules/payment-requests/payment-requests.module';
 import { WebAuthnModule } from './webauthn/webauthn.module';
 import { PaymentsModule } from './modules/payments/payments.module';
+import { StellarModule } from './stellar';
 
 @Module({
   imports: [
@@ -31,6 +32,7 @@ import { PaymentsModule } from './modules/payments/payments.module';
     PaymentRequestsModule,
     WebAuthnModule,
     PaymentsModule,
+    StellarModule,
   ],
   controllers: [AppController],
   providers: [
